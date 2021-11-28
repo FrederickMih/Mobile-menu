@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&family=Inter:wght@400;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Crete+Round&family=Poppins&family=Roboto:wght@700&family=Inter:wght@400;700&display=swap');
 
 * {
   padding: 0;
@@ -27,13 +27,17 @@ header {
   color: white;
 }
 
+.mobile-menu-container ul {
+  margin-top: 5rem;
+}
+
 #desktop-nav,
 #desktop-nav ul {
   display: none;
 }
 
 #logo {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 18px;
@@ -80,7 +84,7 @@ main {
 }
 
 .card h2 {
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 32px;
@@ -91,7 +95,7 @@ main {
 .intro-greet,
 #about-me h2 {
   color: #ff6b00;
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 56px;
@@ -100,7 +104,7 @@ main {
 }
 
 .intro-me {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 24px;
@@ -110,7 +114,7 @@ main {
 }
 
 .intro-text {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -154,7 +158,7 @@ main {
 }
 
 #projects h2 {
-  font-family: "Crete Round", serif;
+  font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: normal;
   font-size: 40px;
@@ -195,7 +199,7 @@ main {
 
 .description,
 .white-description {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -230,7 +234,7 @@ main {
 
 li {
   list-style: none;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 22px;
@@ -247,19 +251,19 @@ li {
 }
 
 .gtime {
-  background-image: url("../media/png/gtime.png");
+  background-image: url('../media/png/gtime.png');
 }
 
 .weather {
-  background-image: url("../media/png/weather.png");
+  background-image: url('../media/png/weather.png');
 }
 
 .conference {
-  background-image: url("../media/png/conference.png");
+  background-image: url('../media/png/conference.png');
 }
 
 .katchy {
-  background-image: url("../media/png/katchy.png");
+  background-image: url('../media/png/katchy.png');
 }
 
 .project-stacks {
@@ -279,6 +283,12 @@ li {
   cursor: pointer;
 }
 
+.mobile-menu-container ul li {
+  position: relative;
+  padding-bottom: 20px;
+  z-index: 999;
+}
+
 .project-stacks li:hover {
   background: rgba(0, 0, 0, 0.349);
 }
@@ -294,7 +304,7 @@ li {
 }
 
 .about-me-text {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 16px;
@@ -309,7 +319,7 @@ li {
   justify-content: center;
   padding: 12px;
   background: #ff6b00;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -340,7 +350,7 @@ li {
 }
 
 .list-title {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 32px;
@@ -348,29 +358,19 @@ li {
 }
 
 .languages {
-  list-style: inside url("../media/svg/rectangle.svg");
+  list-style: inside url('../media/svg/rectangle.svg');
 }
 
 .frameworks {
-  list-style: inside url("../media/svg/square.svg");
+  list-style: inside url('../media/svg/square.svg');
 }
 
 .skills {
-  list-style: inside url("../media/svg/circle.svg");
+  list-style: inside url('../media/svg/circle.svg');
 }
 
 #contact {
   padding: 10%;
-}
-
-#contact h2 {
-  font-family: "Inter", sans-serif;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 32px;
-  line-height: 44px;
-  text-align: center;
-  color: #172b4d;
 }
 
 form {
@@ -393,7 +393,7 @@ textarea {
 
 input,
 textarea {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 15px;
@@ -412,9 +412,47 @@ textarea {
   align-items: center;
   justify-content: space-around;
   padding: 5vh;
-  filter:
-    invert(67%) sepia(46%) saturate(986%) hue-rotate(179deg)
+  filter: invert(67%) sepia(46%) saturate(986%) hue-rotate(179deg)
     brightness(92%) contrast(82%);
+}
+
+.hamburger-open-menu {
+  cursor: pointer;
+}
+
+.mobile-menu-container {
+  background-color: #0f0c0b;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: -110%;
+  z-index: 1000;
+}
+
+.mobile-menu-container ul li a {
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 31px;
+  color: #5656d1;
+  text-decoration: none;
+}
+
+.mobile-menu-container ul li a::after {
+  content: url(./assets/side-arrow.png);
+  position: absolute;
+  top: 0;
+  right: 60px;
+}
+
+.hamburger-close-menu {
+  position: absolute;
+  top: 14px;
+  right: 40px;
+  z-index: 998;
+  cursor: pointer;
+  color: rgb(163, 108, 108);
 }
 
 @media all and (min-width: 720px) {
@@ -455,7 +493,7 @@ textarea {
   }
 
   .nav-link {
-    font-family: "Inter", sans-serif;
+    font-family: 'Inter', sans-serif;
     font-style: normal;
     font-weight: 600;
     font-size: 24px;
@@ -559,5 +597,10 @@ textarea {
   .social-icon {
     width: 3vw;
     height: 32px;
+  }
+
+  .hambuger,
+  .mobile-menu-container {
+    visibility: hidden;
   }
 }
