@@ -1,14 +1,14 @@
 const mobileMenuBars = document.querySelector('.mobile-menu-container');
 
+function closeMenu() {
+  mobileMenuBars.style.left = '-110%';
+}
+
 document.querySelectorAll('.mobile-nav-link').forEach((list) => {
   list.addEventListener('click', () => {
     mobileMenuBars.style.left = '-110%';
   });
 });
-
-function closeMenu() {
-  mobileMenuBars.style.left = '-110%';
-}
 
 document
   .querySelector('.hamburger-close-menu')
