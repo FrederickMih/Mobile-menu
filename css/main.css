@@ -412,8 +412,7 @@ textarea {
   align-items: center;
   justify-content: space-around;
   padding: 5vh;
-  filter:
-    invert(67%) sepia(46%) saturate(986%) hue-rotate(179deg)
+  filter: invert(67%) sepia(46%) saturate(986%) hue-rotate(179deg)
     brightness(92%) contrast(82%);
 }
 
@@ -436,7 +435,7 @@ textarea {
   font-style: normal;
   font-weight: 600;
   line-height: 31px;
-  color: #5656d1;
+  color: hsl(0, 0%, 100%);
   text-decoration: none;
 }
 
@@ -453,7 +452,7 @@ textarea {
   right: 40px;
   z-index: 998;
   cursor: pointer;
-  color: rgb(163, 108, 108);
+  color: rgb(48, 31, 31);
 }
 
 @media all and (min-width: 720px) {
